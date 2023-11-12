@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ejercicios Event Listeners - Conversión de Divisas</title>
+</head>
+<body class="w-full h-screen"> 
+    <main class="w-full h-screen flex justify-center items-center flex-col bg-gray-300">
+        <div id="caja" class="w-80 flex-col mb-8">
+            <h1 class="text-2xl">Monto moneda local</h1>
+            <h2 class="text-gray-500 mb-2">sin comas ni puntos</h2>
+            <input type="number" id="inputMonedaLocal" value="" class="w-80 h-8 bg-white border-2 border-solid border-gray-500 rounded-md mt-2 font-mono">
+        </div>
+        <div id="caja2" class="w-80 flex-col mb-8">
+            <h2 class="text-2xl">Monto moneda en dólares</h2>
+            <h3 class="text-gray-500 mb-2">sin comas ni puntos</h3>
+            <input type="number" id="inputDolar" value="" class="w-80 h-8 bg-white border-2 border-solid border-gray-500 rounded-md mt-2 font-mono">
+        </div>
+        <div class="flex w-80 justify-between">
+            <button type="button" id="convertir" class="bg-yellow-400 px-7 mt-7 font-bold border-solid border-l-4 border-b-4 border-t-2 border-r-2 text-lg border-black rounded">Convertir</button>
+            <button type="button" id="borrar" class="bg-yellow-400 px-7 mt-7 font-bold border-solid border-l-4 border-b-4 border-t-2 border-r-2 text-lg border-black rounded">Borrar</button>
+        </div>
+        <nav class="mt-20 w-full bg-gray-300 flex justify-center items-center gap-8 text-gray-900">
+            <a href="../index.html">Ejercicio Colores</a>
+            <a href="./inputText.html">Input Text</a>
+            <a href="./masaCorporal.html">Masa Corporal</a>
+            <a href="#" class="font-bold">Conversión de Divisas</a>
+        </nav>
+    </main>
+    <script src="./conversionDivisas.js"></script>
+    <script type="module" src="../tailwind.config.js"></script>
+</body>
+</html>
